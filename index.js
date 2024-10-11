@@ -16,8 +16,7 @@ const db = new pg.Client({
   host: process.env.HOST,
   database: process.env.DATABASE,
   password: process.env.PASSWORD,
-  port: process.env.PORT,
-  ssl: true
+  port: process.env.PORT
 });
 console.log("info log: db.on.");
 db.on("error", (err) => {
